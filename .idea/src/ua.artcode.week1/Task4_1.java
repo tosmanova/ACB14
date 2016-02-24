@@ -5,12 +5,13 @@ import java.util.Scanner;
 /**
  * Created by tos on 2/23/16.
  */
-public class MyStatus {
+public class Task4_1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Input number between 0 and 24");
         int currentTime = scanner.nextInt();
-        System.out.println(new MyStatus().get(currentTime));
+        System.out.println(new Task4_1().get(currentTime));
     }
 
     private String get(int currentTime) {
@@ -19,7 +20,8 @@ public class MyStatus {
         } else if (currentTime > 0 && currentTime < 24) {
             return "I have rest";
         } else {
-            return "You are wrong, type a number between 0 and 24'";
+            return "You are wrong, you have to type a number between 0 and 24'";
         }
+
     }
 }
