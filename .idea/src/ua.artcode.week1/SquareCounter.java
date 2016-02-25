@@ -5,17 +5,20 @@ import java.util.Scanner;
 /**
  * Created by tos on 2/24/16.
  */
-public class Task4_4 {
+public class SquareCounter {
     public static void main(String[] args) {
-        System.out.println("Input any float");
+
+        System.out.println("Input a number");
         Scanner scanner = new Scanner(System.in);
-        float number = scanner.nextFloat();
-        if (number<=1 && number>=0)
-        {
-            System.out.println("Your number is between 0 and 1");
+        int number = scanner.nextInt();
+        int modulo = number%7;
+
+        if (modulo==0){
+            System.out.println(number*number);
         }
-        else{
+        else {
             System.out.println("Wrong number");
         }
     }
+
 }

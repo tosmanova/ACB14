@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by tos on 2/24/16.
  */
-public class Task4_2 {
+public class MinMaxFinder {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class Task4_2 {
         int number2 = scanner.nextInt();
         System.out.println("Input third number");
         int number3 = scanner.nextInt();
-        System.out.println(new Task4_2().findMinMax(number1, number2, number3));
+        System.out.println(new MinMaxFinder().findMinMax(number1, number2, number3));
 
     }
 

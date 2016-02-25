@@ -5,20 +5,17 @@ import java.util.Scanner;
 /**
  * Created by tos on 2/24/16.
  */
-public class Task4_3 {
+public class RangeValidator {
     public static void main(String[] args) {
-
-        System.out.println("Input a number");
+        System.out.println("Input any float");
         Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        int modulo = number%7;
-
-        if (modulo==0){
-            System.out.println(number*number);
+        float number = scanner.nextFloat();
+        if (number<=1 && number>=0)
+        {
+            System.out.println("Your number is between 0 and 1");
         }
-        else {
+        else{
             System.out.println("Wrong number");
         }
     }
-
 }

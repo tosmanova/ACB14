@@ -5,13 +5,13 @@ import java.util.Scanner;
 /**
  * Created by tos on 2/23/16.
  */
-public class Task4_1 {
+public class StatusChecker {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input number between 0 and 24");
         int currentTime = scanner.nextInt();
-        System.out.println(new Task4_1().get(currentTime));
+        System.out.println(new StatusChecker().get(currentTime));
     }
 
     private String get(int currentTime) {
