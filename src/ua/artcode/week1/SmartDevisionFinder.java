@@ -11,7 +11,7 @@ public class SmartDevisionFinder {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input first integer");
         int firstNumber = scanner.nextInt();
-        System.out.println("Input second fgdfgdfginteger");
+        System.out.println("Input second integer");
         int secondNumber = scanner.nextInt();
         int modulo = firstNumber%secondNumber;
         int result = firstNumber/secondNumber;
