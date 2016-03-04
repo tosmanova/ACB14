@@ -99,7 +99,7 @@ public class ArrayUtils {
 
     public static int getMaximumNumberOfArray(int[] nums){
         int maxElement = nums[0];
-        for (int i = 0; i <nums.length-1; i++) {
+        for (int i = 0; i <nums.length; i++) {
             maxElement = (nums[i]>=maxElement?nums[i]:maxElement);
         }
         return maxElement;
@@ -121,12 +121,12 @@ public class ArrayUtils {
          */
         int maxElement = nums[0];
         int minElement = nums[0];
-        for (int i = 0; i < nums.length-1; i++) {
+        for (int i = 0; i < nums.length; i++) {
             maxElement = (nums[i]>=maxElement?nums[i]:maxElement);
             minElement = (nums[i]<=minElement?nums[i]:minElement);
         }
 
-        for (int i = 0; i < nums.length-1 ; i++) {
+        for (int i = 0; i < nums.length ; i++) {
             if(nums[i] == minElement){
                 nums[i] = maxElement;
             }
